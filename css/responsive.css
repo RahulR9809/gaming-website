@@ -1,0 +1,232 @@
+/* ==========================================================================
+   NEXUS GAMING HUB - RESPONSIVE STYLES
+   ========================================================================== */
+
+/* Large Tablets & Small Laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .section {
+    padding: 5rem 0;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .split-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .split-media {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .offers-grid {
+    grid-template-columns: 1fr;
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  .offer-card.featured-card {
+    transform: none;
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feature-banner-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-banner-media {
+    min-height: 320px;
+  }
+
+  .showcase-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pipeline-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-item.span-2 {
+    grid-column: span 1;
+  }
+
+  .location-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  :root {
+    --nav-height: 70px;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .section-title-wrap {
+    margin-bottom: 2.8rem;
+  }
+
+  /* Mobile Navigation Drawer */
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 320px;
+    height: 100vh;
+    background: rgba(9, 10, 16, 0.96);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border-left: 1px solid var(--bg-glass-border);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 2rem;
+    gap: 1.5rem;
+    transition: right var(--transition-normal);
+    z-index: 1001;
+    box-shadow: -10px 0 40px rgba(0, 0, 0, 0.8);
+  }
+
+  .nav-menu.open {
+    right: 0;
+  }
+
+  .nav-link {
+    font-size: 1.3rem;
+  }
+
+  .nav-actions .btn {
+    display: none;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding-top: calc(var(--nav-height) + 1.5rem);
+    padding-bottom: 4rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .hero-highlight-pill {
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  /* Experience Cards */
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .exp-card {
+    padding: 1.8rem;
+  }
+
+  /* Why Grid */
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Showcase Grid */
+  .showcase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Pipeline Grid */
+  .pipeline-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Feature Banners */
+  .feature-banner-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .vip-house-box {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .cta-box {
+    padding: 3rem 1.5rem;
+  }
+
+  /* Gallery Grid */
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 180px;
+    gap: 0.8rem;
+  }
+
+  .gallery-item.span-row-2 {
+    grid-row: span 1;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  /* Booking Modal */
+  .booking-modal-box {
+    padding: 1.8rem 1.2rem;
+  }
+
+  .radio-tiles-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 200px;
+  }
+
+  .floating-pills-wrap {
+    justify-content: center;
+  }
+}
